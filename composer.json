@@ -7,5 +7,14 @@
 			"name": "Scott Salisbury",
 			"email": "scottsalisbury@gmail.com"
 		}
-	]
+	],
+	"minimum-stability": "dev",
+	"scripts": {
+		"remote-uploads-enable" : [
+			"vendor/scottjs/helper-scripts/remote-uploads.sh enable"
+		],
+		"remote-uploads-disable" : [
+			"vendor/scottjs/helper-scripts/remote-uploads.sh disable"
+		]
+	}
 }
