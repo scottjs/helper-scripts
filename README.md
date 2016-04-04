@@ -58,7 +58,7 @@ From the root of your project, you will be able to run the following composer co
 
 * ***composer remote-uploads-disable*** - A convenient helper command to remove the .htaccess file created by the command above just in case you find it causes issues or is no longer needed.
 
-## Configuration Options
+## Config
 
 See below for an explanation of each configuration option used within the .env file.
 
