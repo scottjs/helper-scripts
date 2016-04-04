@@ -1,6 +1,6 @@
 # Helper Scripts
 
-When developing locally on an active project, it's likely that the main uploads folder is not bundled within your repository, causing CMS uploaded images not to load, such as `wp-content/uploads` in a WordPress environment. These scripts allow you to quickly generate a local .htaccess file in your configured uploads directory and will redirect all requests to the remote server instead.
+When developing locally on an active project using a version control system, it's likely that the main uploads folder is not bundled within your repository, causing CMS uploaded images not to load, such as `wp-content/uploads` in a WordPress environment. These scripts allow you to quickly generate a local .htaccess file in your configured uploads directory and will redirect all requests to the remote server instead.
 
 This repository is intended to host a collection of other scripts to carry out common and repetitive development tasks in the future. It is a work in progress.
 
