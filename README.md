@@ -4,6 +4,8 @@ When developing locally on an active project, it's likely that the main uploads 
 
 This repository is intended to host a collection of other scripts to carry out common and repetitive development tasks in the future. It is a work in progress.
 
+*Disclaimer: These scripts and commands were originally created for use internally within our development team to speed up common, repetitive tasks. However, they may be of some use to others. Feel free to use in your own projects, your mileage may vary.*
+
 ## Requirements
 
 * Composer
