@@ -19,11 +19,11 @@ This repository is intended to host a collection of other scripts to carry out c
 
 ## Installation
 
-Add `"scottjs/helper-scripts": "0.*"` to your `composer.json` file:
+Add `"scottjs/helper-scripts": "1.*"` to your `composer.json` file:
 
 ```
 "require-dev": {
-	"scottjs/helper-scripts": "0.*"
+	"scottjs/helper-scripts": "1.*"
 },
 ```
 
