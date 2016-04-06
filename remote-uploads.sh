@@ -15,19 +15,19 @@ CONFIG=${DIR%/*/*/*}
 # Import config settings
 source "$CONFIG/.env"
 
-# Create uploads directory just in case it doesn't exist
-mkdir -p $CONFIG$APP_DOCROOT$APP_UPLOADS
-
 if [[ $1 = "enable" ]]; then
+
+	# Create uploads directory just in case it doesn't exist
+	mkdir -p $CONFIG$APP_DOCROOT$APP_UPLOADS
 
 	if [[ $APP_SSL = "true" ]]; then
 		echo Creating file: $APP_DOCROOT$APP_UPLOADS/.htaccess
 		sed -e 's#__REPLACE__#'https://$DOMAIN_REMOTE'#g' $CONFIG/vendor/scottjs/helper-scripts/.htaccess-sample > $CONFIG$APP_DOCROOT$APP_UPLOADS/.htaccess
-		echo COMPLETE: Loading remote uploads now enabled: https://$DOMAIN_REMOTE$APP_UPLOADS
+		echo COMPLETE: Remote uploads now enabled: https://$DOMAIN_REMOTE$APP_UPLOADS
 	else
 		echo Creating file: $APP_DOCROOT$APP_UPLOADS/.htaccess
 		sed -e 's#__REPLACE__#'http://$DOMAIN_REMOTE'#g' $CONFIG/vendor/scottjs/helper-scripts/.htaccess-sample > $CONFIG$APP_DOCROOT$APP_UPLOADS/.htaccess
-		echo COMPLETE: Loading remote uploads now enabled: http://$DOMAIN_REMOTE$APP_UPLOADS
+		echo COMPLETE: Remote uploads now enabled: http://$DOMAIN_REMOTE$APP_UPLOADS
 	fi
 
 elif [[ $1 = "disable" ]]; then
@@ -36,6 +36,6 @@ elif [[ $1 = "disable" ]]; then
 
 	rm -rf "$CONFIG$APP_DOCROOT$APP_UPLOADS/.htaccess"
 
-	echo COMPLETE: Loading remote uploads now disabled
+	echo COMPLETE: Remote uploads now disabled
 
 fi

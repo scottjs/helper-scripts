@@ -19,12 +19,12 @@ This repository is intended to host a collection of other scripts to carry out c
 
 ## Installation
 
-Add `"scottjs/helper-scripts": "1.*"` to your `composer.json` file:
+Run `composer require "scottjs/helper-scripts:1.*"` from the root of your project, or manually add `"scottjs/helper-scripts": "1.*"` to your `composer.json` file:
 
 ```
 "require-dev": {
 	"scottjs/helper-scripts": "1.*"
-},
+}
 ```
 
 Then add the following scripts to your `composer.json` file:
@@ -40,7 +40,7 @@ Then add the following scripts to your `composer.json` file:
 }
 ```
 
-Run the `composer update` command from the root of your project. 
+Run the `composer update` command from the root of your project.
 
 Create a `.env` file in the root of your project and add/update the following configuration options:
 
